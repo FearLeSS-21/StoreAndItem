@@ -27,7 +27,11 @@ public class Main {
                 String itemCode = scanner.nextLine();
                 System.out.println("Enter item name: ");
                 String itemName = scanner.nextLine();
-                Item item = new Item(itemCode, itemName);
+
+                Item item = new Item(null, null);
+                item.setItemCode(itemCode);
+                item.setItemName(itemName);
+
                 itemManager.insert(item);
 
             } else if (entity.equalsIgnoreCase("store")) {
@@ -35,7 +39,11 @@ public class Main {
                 String storeCode = scanner.nextLine();
                 System.out.println("Enter store name: ");
                 String storeName = scanner.nextLine();
-                Store store = new Store(storeCode, storeName);
+
+                Store store = new Store(null, null);
+                store.setStoreCode(storeCode);
+                store.setStoreName(storeName);
+
                 storeManager.insert(store);
             }
         } else if (action.equalsIgnoreCase("select")) {
