@@ -1,4 +1,4 @@
-# StoreAndItem|
+# StoreAndItem
 
 - Implement the previous endpoints but read and write from the database
 - Use fly way with spring to create the tables needed
